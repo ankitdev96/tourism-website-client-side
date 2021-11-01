@@ -14,7 +14,7 @@ const BuyService = () => {
 
    
     useEffect(() => {
-        fetch(`http://localhost:5000/service/${serviceId}`)
+        fetch(`https://nameless-cove-35810.herokuapp.com/service/${serviceId}`)
          .then(res => res.json())
          .then(data =>setService(data))
 
@@ -28,7 +28,7 @@ const BuyService = () => {
 
        console.log(data);
 
-            fetch('http://localhost:5000/orders', {
+            fetch('https://nameless-cove-35810.herokuapp.com/orders', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

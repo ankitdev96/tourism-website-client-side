@@ -8,7 +8,7 @@ const Add = () => {
   const onSubmit = data => 
   {
     console.log(data);
-    axios.post('http://localhost:5000/service',data)
+    axios.post('https://nameless-cove-35810.herokuapp.com/service',data)
     .then(res => {
         console.log(res);
         // console.log(res.data.insertId);
